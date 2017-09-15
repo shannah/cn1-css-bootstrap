@@ -10,7 +10,7 @@ Installation requires the https://github.com/shannah/codenameone-cli[Codename On
 ----
 $ cn1 create <destdir> <package> <main-class-name> \n
     -i [Netbeans|Eclipse|IntelliJ] \n
-    -t url-to-this-project
+    -t https://github.com/shannah/cn1-css-bootstrap/archive/master.zip
 ----
 
 Where `<destdir>` is the path to the project directory that should be created for your project, `<package>` is the java package for your project, and
@@ -19,5 +19,14 @@ Where `<destdir>` is the path to the project directory that should be created fo
 Example.  To create a Codename One Netbeans project that has CSS setup with main class name com.example.myapp.MyCSSApp, in the directory myapp you would do:
 [source,bash]
 ----
-$ cn1 create myapp com.example.myapp MyCSSApp -i Netbeans -t url-to-this-project
+$ cn1 create myapp com.example.myapp MyCSSApp -i Netbeans -t https://github.com/shannah/cn1-css-bootstrap/archive/master.zip
 ----
+
+Alternatively you can run graphical wizard using:
+
+[source,bash]
+____
+$ cn1 create -g myapp
+____
+
+And paste the template url "https://github.com/shannah/cn1-css-bootstrap/archive/master.zip" in the template field.
