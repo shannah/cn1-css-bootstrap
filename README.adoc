@@ -1,0 +1,23 @@
+= Codename One CSS Project Bootstrap
+
+A bootstrap basic hello world https://www.codenameone.com/[Codename One] project with the CSS plugin installed.
+
+== Installation
+
+Installation requires the https://github.com/shannah/codenameone-cli[Codename One CLI] to be installed.
+
+[source,bash]
+----
+$ cn1 create <destdir> <package> <main-class-name> \n
+    -i [Netbeans|Eclipse|IntelliJ] \n
+    -t url-to-this-project
+----
+
+Where `<destdir>` is the path to the project directory that should be created for your project, `<package>` is the java package for your project, and
+`<main-class-name>` is the main class name.
+
+Example.  To create a Codename One Netbeans project that has CSS setup with main class name com.example.myapp.MyCSSApp, in the directory myapp you would do:
+[source,bash]
+----
+$ cn1 create myapp com.example.myapp MyCSSApp -i Netbeans -t url-to-this-project
+----

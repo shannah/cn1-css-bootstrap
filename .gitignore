@@ -1,0 +1,8 @@
+dist
+build
+*.jar
+.cn1_css_checksums
+nbproject/private
+!cn1css.jar
+!cn1css-ant-task.jar
+*.zip
