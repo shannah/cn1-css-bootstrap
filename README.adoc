@@ -25,8 +25,10 @@ $ cn1 create myapp com.example.myapp MyCSSApp -i Netbeans -t https://github.com/
 Alternatively you can run graphical wizard using:
 
 [source,bash]
-____
+----
 $ cn1 create -g myapp
-____
+----
 
 And paste the template url "https://github.com/shannah/cn1-css-bootstrap/archive/master.zip" in the template field.
+
+IMPORTANT: The first time you open the project, you may may need to update the project libs.  In Netbeans you would do this by opening the project properties, then press the "Update Project Libs" button.  In Eclipse and IntelliJ is is similar.
